@@ -126,7 +126,7 @@ Fractal.prototype = {
 		for ( i = 0; i < parts; i++ ) {
 			
 			// create a new worker
-			this.wrkr[i] = new Worker('fractal-worker.js');
+			this.wrkr[i] = new Worker('js/fractal-worker.js');
 			
 			// if last part, include what's left
 			if (i === parts - 2) rest = height - partSize * parts;
